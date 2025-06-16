@@ -40,3 +40,69 @@ A full-stack web application to help users track their daily expenses, manage sp
 
 ## 📑 Project Structure
 
+consumer-tracker/
+├── backend/
+│ ├── routes/
+│ ├── controllers/
+│ ├── models/
+│ └── server.js
+├── frontend/
+│ ├── index.html
+│ ├── css/
+│ ├── js/
+│ └── pages/
+├── database/
+│ └── consumer_tracker.sql
+├── README.md
+└── .env
+
+
+---
+
+## 📈 Core Functionalities
+
+- Add, update, and delete expenses.
+- Create and manage categories.
+- Set and track financial targets.
+- Visualize total and category-wise expenses.
+- Filter reports by month, week, or year.
+
+---
+
+## 📊 Visuals and Reporting
+
+- **Category-wise Pie/Bar Charts**
+- **Monthly/Weekly/Annual Expense Trends**
+- **Target vs Actual Comparisons**
+
+---
+
+## 📝 Future Enhancements
+
+- User Authentication & Login
+- Export reports to PDF/Excel
+- Notifications when nearing budget targets
+- Mobile app version (React Native / Flutter)
+
+---
+
+## 📦 Installation & Setup
+
+1. Clone this repository.
+2. Install dependencies:
+
+6. Open `index.html` in your browser.
+
+---
+
+## 🖥️ Sample Code Snippets (Optional)
+
+*Add these only if you want*
+
+```javascript
+// Example: Fetch all expenses API
+app.get('/api/expenses', (req, res) => {
+ Expense.findAll()
+   .then(data => res.json(data))
+   .catch(err => res.status(500).send(err));
+});
